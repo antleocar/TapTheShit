@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Woodstamp.otf">
+            <string>WoodStamp</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapThisShit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-1445021_1280" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-3L-t4a">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP THE SHIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXX-KF-jV7">
+                                <rect key="frame" x="20" y="28" width="728" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="ny5-mg-ggP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WoodStamp" family="Wood Stamp" pointSize="105"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.94528499119718312" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egk-Wh-H8K">
+                                <rect key="frame" x="20" y="901" width="728" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="3lk-ZU-odu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WoodStamp" family="Wood Stamp" pointSize="75"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.94528499119718312" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOT-0E-MHZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypr-iM-4mu">
+                                <rect key="frame" x="20" y="159" width="728" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="igj-9e-CD6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WoodStamp" family="Wood Stamp" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.94528499119718312" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g2-3X-3M0">
+                                <rect key="frame" x="20" y="340" width="728" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="1aM-xS-lpq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WoodStamp" family="Wood Stamp" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.94528499119999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thu-LK-7gB">
+                                <rect key="frame" x="236" y="564" width="296" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Thu-LK-7gB" secondAttribute="height" multiplier="148:147" id="saY-l9-iCZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WoodStamp" family="Wood Stamp" pointSize="51"/>
+                                <state key="normal" backgroundImage="poop-2024794_1280">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.91226915215608728" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHm-sb-b5c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ypr-iM-4mu" firstAttribute="top" secondItem="DXX-KF-jV7" secondAttribute="bottom" constant="8" id="32J-QR-xf8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xwh-3L-t4a" secondAttribute="bottom" id="3vo-lb-H0Q"/>
+                            <constraint firstItem="2g2-3X-3M0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AXu-21-lja"/>
+                            <constraint firstItem="xwh-3L-t4a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EA2-mV-eaa"/>
+                            <constraint firstItem="DXX-KF-jV7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Eiq-Gt-qMu"/>
+                            <constraint firstItem="Thu-LK-7gB" firstAttribute="top" secondItem="2g2-3X-3M0" secondAttribute="bottom" constant="89" id="Gzu-We-3Sp"/>
+                            <constraint firstItem="Egk-Wh-H8K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ph8-rw-cYC"/>
+                            <constraint firstItem="xwh-3L-t4a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TdZ-H1-Lem"/>
+                            <constraint firstAttribute="trailing" secondItem="DXX-KF-jV7" secondAttribute="trailing" constant="20" id="Ude-OA-c2F"/>
+                            <constraint firstItem="Ypr-iM-4mu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="XSj-IE-C2E"/>
+                            <constraint firstItem="DXX-KF-jV7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="XWv-Fx-xy1"/>
+                            <constraint firstAttribute="trailing" secondItem="Ypr-iM-4mu" secondAttribute="trailing" constant="20" id="blg-z9-QfO"/>
+                            <constraint firstItem="2g2-3X-3M0" firstAttribute="top" secondItem="Ypr-iM-4mu" secondAttribute="bottom" constant="8" id="fde-W2-EvA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Egk-Wh-H8K" secondAttribute="bottom" constant="20" id="hNT-TR-3Rg"/>
+                            <constraint firstItem="Egk-Wh-H8K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jbC-f2-Co8"/>
+                            <constraint firstItem="Thu-LK-7gB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pI6-8n-r0O"/>
+                            <constraint firstItem="2g2-3X-3M0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wIc-xk-vWs"/>
+                            <constraint firstAttribute="trailing" secondItem="xwh-3L-t4a" secondAttribute="trailing" id="y1q-HD-msY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Thu-LK-7gB" secondAttribute="bottom" constant="166" id="yfd-sP-sSv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pointsCounterLabel" destination="2g2-3X-3M0" id="iUb-Te-C4Q"/>
+                        <outlet property="startButton" destination="Egk-Wh-H8K" id="waH-OE-mjk"/>
+                        <outlet property="tapButton" destination="Thu-LK-7gB" id="jW2-zF-zn7"/>
+                        <outlet property="timerCounterLabel" destination="Ypr-iM-4mu" id="h76-nu-sl1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-1445021_1280" width="1280" height="720"/>
+        <image name="poop-2024794_1280" width="1280" height="1280"/>
+    </resources>
+</document>
